@@ -92,6 +92,11 @@ public class Komplain {
             Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbpass);
             PreparedStatement preparedStatement = connection.prepareStatement(Query);
             preparedStatement.executeUpdate();
+
+            Query = "UPDATE komplain SET kompensasi = \" - \" " +
+                    "WHERE nota_id = " + _idNota;
+            preparedStatement = connection.prepareStatement(Query);
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }

@@ -65,11 +65,6 @@ public class listPesananController {
     }
 
     @FXML
-    public void openProgress(){
-
-    }
-
-    @FXML
     public void openKomplain(){
         HelloApplication app = HelloApplication.getApp();
         Stage mainStage = app.getMainStage();
