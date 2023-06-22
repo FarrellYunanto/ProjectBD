@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_bd.progress.member.memberProgressController">
+   <children>
+      <TableView fx:id="pesananTableView" layoutX="34.0" layoutY="95.0" prefHeight="211.0" prefWidth="730.0">
+        <columns>
+          <TableColumn fx:id="colNama" prefWidth="364.0" text="Nama Pesanan" />
+          <TableColumn fx:id="colStatus" prefWidth="346.39996337890625" text="STATUS" />
+        </columns>
+      </TableView>
+      <TableView fx:id="historyTableView" layoutX="34.0" layoutY="331.0" prefHeight="178.0" prefWidth="730.0">
+        <columns>
+          <TableColumn fx:id="colWaktu" prefWidth="368.79998779296875" text="Waktu" />
+            <TableColumn fx:id="colDeskripsi" prefWidth="360.8000244140625" text="Deskripsi" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21e9ff" height="78.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Text fill="#766262" layoutX="136.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMELLS LIKE CLEAN CLOTHES ARE COMING!" wrappingWidth="539.696044921875">
+         <font>
+            <Font name="Haettenschweiler" size="42.0" />
+         </font>
+      </Text>
+      <Button layoutX="35.0" layoutY="536.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="730.0" text="BACK" />
+   </children>
+</AnchorPane>

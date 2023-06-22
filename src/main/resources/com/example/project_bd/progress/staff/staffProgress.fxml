@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_bd.progress.staff.staffProgressController">
+   <children>
+      <TableView fx:id="pesananTableView" layoutX="25.0" layoutY="19.0" prefHeight="230.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="colNama" prefWidth="166.39998817443848" text="Nama Pesanan" />
+          <TableColumn fx:id="colStatus" prefWidth="132.79998779296875" text="Status" />
+        </columns>
+      </TableView>
+      <TableView fx:id="historyTableView" layoutX="23.0" layoutY="283.0" prefHeight="194.0" prefWidth="618.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="65.59997940063477" text="ID_History" />
+            <TableColumn fx:id="colWaktu" prefWidth="174.39995574951172" text="Waktu" />
+            <TableColumn fx:id="colDeskripsi" prefWidth="196.800048828125" text="Deskripsi" />
+            <TableColumn fx:id="colNota" prefWidth="56.800048828125" text="Nota_ID" />
+            <TableColumn fx:id="colJasa" prefWidth="53.5999755859375" text="Jasa_ID" />
+         </columns>
+      </TableView>
+      <TextArea fx:id="desc" layoutX="650.0" layoutY="360.0" prefHeight="46.0" prefWidth="247.0" />
+      <Text layoutX="732.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESKRIPSI BARU:" />
+      <Button layoutX="650.0" layoutY="417.0" mnemonicParsing="false" onAction="#insertBtn" prefHeight="26.0" prefWidth="247.0" text="UPDATE" />
+      <Line endX="-100.00006103515625" endY="237.5" layoutX="529.0" layoutY="28.0" startX="-100.00003051757812" startY="-30.199993133544922" stroke="#ead1d1" strokeWidth="2.5" />
+      <Line endX="-144.00003051757812" endY="232.26776123046875" layoutX="573.0" layoutY="35.0" startX="-579.3999633789062" startY="231.75" stroke="#ead1d1" strokeWidth="2.5" />
+      <Line endX="-114.0" endY="232.26776123046875" layoutX="1022.0" layoutY="35.0" startX="-593.0" startY="232.26776123046875" stroke="#ead1d1" strokeWidth="2.5" />
+      <Line endX="314.0" endY="233.0" layoutX="594.0" layoutY="262.0" startX="-593.0" startY="232.26776123046875" stroke="#ead1d1" strokeWidth="2.5" />
+      <Line endX="-100.0" endY="465.76776123046875" layoutX="1008.0" layoutY="32.0" startX="-100.00003051757812" startY="-30.199993133544922" stroke="#ead1d1" strokeWidth="2.5" />
+      <Line endX="314.0" endY="233.0" layoutX="594.0" layoutY="-231.0" startX="-593.0" startY="232.26776123046875" stroke="#ead1d1" strokeWidth="2.5" />
+      <Line endX="-100.0" endY="465.76776123046875" layoutX="101.0" layoutY="30.0" startX="-100.00003051757812" startY="-30.199993133544922" stroke="#ead1d1" strokeWidth="2.5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fafafa" height="237.0" layoutX="446.0" layoutY="12.0" stroke="#f7cbcb" strokeType="INSIDE" width="453.0" />
+      <Text fill="#867171" layoutX="508.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUCI BERSIH" wrappingWidth="367.73675537109375">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="53.0" />
+         </font>
+      </Text>
+      <Text fill="#534545" layoutX="499.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER HAPPY :)" textAlignment="CENTER" wrappingWidth="367.73675537109375">
+         <font>
+            <Font name="Eras Demi ITC" size="53.0" />
+         </font>
+      </Text>
+      <Text layoutX="748.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JASA_ID:" />
+      <TextField fx:id="jasa" layoutX="651.0" layoutY="303.0" prefHeight="26.0" prefWidth="247.0" />
+      <Button layoutX="651.0" layoutY="452.0" mnemonicParsing="false" onAction="#back" prefHeight="16.0" prefWidth="247.0" text="BACK" />
+   </children>
+</AnchorPane>

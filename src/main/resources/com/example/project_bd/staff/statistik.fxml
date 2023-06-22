@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_bd.staff.StatistikControl">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="24.0" prefHeight="27.0" prefWidth="260.0" text="LAPORAN PENJUALAN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="125.0" prefHeight="21.0" prefWidth="126.0" text="JASA BEST SELLER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Line endX="580.5" endY="61.0" startX="12.5" startY="61.0" />
+      <Label fx:id="jasaBestSeller" layoutX="247.0" layoutY="125.0" prefHeight="17.0" prefWidth="146.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="173.0" prefHeight="21.0" prefWidth="119.0" text="BEST CUSTOMER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="bestCustomer" layoutX="247.0" layoutY="173.0" prefHeight="17.0" prefWidth="146.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="225.0" prefHeight="21.0" prefWidth="146.0" text="TOTAL PENGHASILAN">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPenghasilan" layoutX="247.0" layoutY="225.0" prefHeight="17.0" prefWidth="146.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="450.0" layoutY="8.0" mnemonicParsing="false" onAction="#openKomplain" text="Komplain" />
+      <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#openStaffList" text="Admin List" />
+      <Button layoutX="360.0" layoutY="8.0" mnemonicParsing="false" onAction="#openPesanan" text="List Pesanan" />
+   </children>
+</AnchorPane>
