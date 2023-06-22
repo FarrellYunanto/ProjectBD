@@ -25,5 +25,6 @@
       <Button layoutX="516.0" layoutY="8.0" mnemonicParsing="false" onAction="#openStaffList" text="Admin List" />
       <Button layoutX="21.0" layoutY="8.0" mnemonicParsing="false" onAction="#openStats" text="Laporan" />
       <Button fx:id="progressButton" layoutX="357.0" layoutY="442.0" mnemonicParsing="false" onAction="#openStaffProgress" text="Edit Progress" />
+      <Button layoutX="464.0" layoutY="442.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
     </children>
 </AnchorPane>

@@ -57,6 +57,14 @@ public class listPesananController {
     }
 
     @FXML
+    public void refresh(){
+        listPesanan = FXCollections.observableArrayList();
+        pesanan.viewListPesanan(listPesanan);
+        TABLE_PESANAN.setItems(listPesanan);
+        TABLE_PESANAN.refresh();
+    }
+
+    @FXML
     public void openProgress(){
 
     }
